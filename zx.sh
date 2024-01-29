@@ -87,7 +87,7 @@ function membangun(){
 			CROSS_COMPILE_ARM32=arm-eabi-
 		)
 	fi
-		make O=out ARCH=arm64 vendor/bengal-perf_defconfig
+		make O=out ARCH=arm64 vendor/fury-perf_defconfig
 		make -j$(nproc --all) O=out \
 				"${MAKE[@]}" 2>&1 | tee build.log
 
